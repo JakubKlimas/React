@@ -1,0 +1,13 @@
+name: 'Hello Word'
+description: 'Greet someone and record'
+inputs:
+  who-to-greet:
+  description: 'Who to greet'
+  required: true
+  default: 'Word'
+outputs:
+  time:
+    description: 'The time we greeted you'
+runs:
+  using: 'node12'
+  main: 'index.js'
