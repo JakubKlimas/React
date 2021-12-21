@@ -4,11 +4,10 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-name: Hello world action step
+    - name: Hello world action step
       id: hello
-      uses: JakubKlimas
+      uses: JakubKlimas/React@v1
       with:
         who-to-greet: 'Kuba'
-    # Use the output from the `hello` step
-name: Get the output time
+    - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
